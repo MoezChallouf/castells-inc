@@ -22,8 +22,8 @@ Route::get('/', function () {
 
 Route::get('/', [ProjectController::class, 'home'])->name('home');
 Route::view('/about', 'pages/about')->name('about');
-Route::view('/service', 'service')->name('service');
-Route::view('/feature', 'feature')->name('feature');
+Route::view('/service', 'pages/service')->name('service');
+Route::view('/project', 'pages/project')->name('project');
 Route::view('/appointment', 'appointment')->name('appointment');
 Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');

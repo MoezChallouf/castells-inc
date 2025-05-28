@@ -1,6 +1,5 @@
-<div>
-
-      <!-- Topbar Start -->
+<div>   
+ <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3">
         <div class="container">
             <div class="row">
@@ -40,18 +39,18 @@
             <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand" style="display:flex;">
                     {{-- <img src="{{asset('img/castells.jpg')}}" alt="" width="80" height="50" style="margin-right: 10px; border-radius: 5px;"> --}}
-                    <h1 class="m-0 display-5 text-white" ><span class="text-primary mr-2">CASTELLS</span>Inc.</h1>
+                    <h1 class="m-0 display-5 text-white" style=" font-family: 'Cinzel', serif;" ><span class="text-primary mr-2">CASTELLS</span>Inc.</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a wire:navigate href="{{asset(route('home'))}}" class="nav-item nav-link active">Home</a>
-                        <a wire:navigate href="{{asset(route('about'))}}" class="nav-item nav-link">About</a>
-                        <a wire:navigate href="{{asset(route('service'))}}" class="nav-item nav-link">Service</a>
-                        <a wire:navigate href="#" class="nav-item nav-link">Project</a>
-                        <a wire:navigate href="{{asset(route('contact'))}}" class="nav-item nav-link">Contact</a>
+                        <a href="{{asset(route('home'))}}" class="nav-item nav-link active">Home</a>
+                        <a href="{{asset(route('about'))}}" class="nav-item nav-link">About</a>
+                        <a href="{{asset(route('service'))}}" class="nav-item nav-link">Service</a>
+                        <a href="{{asset(route('project'))}}" class="nav-item nav-link">Project</a>
+                        <a href="{{asset(route('contact'))}}" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
