@@ -21,8 +21,11 @@
   @endif
 
   <div class="slider-grid">
+    
     @forelse($featuredProjects as $project)
+   
       <div class="slider-card" data-category="{{ $project->category_id }}">
+
         <div class="comparison-slider">
           <div class="comparison-before">
             <img src="{{ Storage::url($project->before_image) }}" alt="Before {{ $project->title }}" loading="lazy">
@@ -35,8 +38,13 @@
           <div class="comparison-label after">After</div>
         </div>
         <div class="project-info">
-          <h3>{{ $project->title }}</h3>
-          <p>{{ $project->description }}</p>
+          <h3> 
+            <a  href="{{ route('projects.show', $project) }}" class="project-link" style="color: inherit;">
+            {{ $project->title }}
+            </a>
+          </h3>
+          <p> {{ Str::limit($project->description, 200) }}</p>
+           
         </div>
       </div>
     @empty
@@ -215,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
   position: absolute;
   width: 0;
 }
+
 
 .slider-card {
   flex: 0 0 calc(33.33% - 1.5rem);

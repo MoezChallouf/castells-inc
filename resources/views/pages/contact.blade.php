@@ -30,7 +30,7 @@
                 <div class="col-lg-5">
                     <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5 ">
                        <div class="d-flex justify-content-center mb-4">
-                            <img src="{{ asset('img/castells.jpg') }}" alt="" class="img-fluid" style="border-radius: 10px; max-width: 100%; height: auto; margin-top: -20px;">
+                            <img src="{{ asset('img/castells-1.png') }}" alt="" class="img-fluid" style="border-radius: 10px; max-width: 100%; height: auto; margin-top: -20px;">
                         </div>
 
 

@@ -37,7 +37,7 @@
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container position-relative" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand" style="display:flex;">
+                <a href="{{asset(route('home'))}}" class="navbar-brand" style="display:flex;">
                     {{-- <img src="{{asset('img/castells.jpg')}}" alt="" width="80" height="50" style="margin-right: 10px; border-radius: 5px;"> --}}
                     <h1 class="m-0 display-5 text-white" style=" font-family: 'Cinzel', serif;" ><span class="text-primary mr-2">CASTELLS</span>Inc.</h1>
                 </a>
@@ -46,11 +46,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="{{asset(route('home'))}}" class="nav-item nav-link active">Home</a>
-                        <a href="{{asset(route('about'))}}" class="nav-item nav-link">About</a>
-                        <a href="{{asset(route('service'))}}" class="nav-item nav-link">Service</a>
-                        <a href="{{asset(route('project'))}}" class="nav-item nav-link">Project</a>
-                        <a href="{{asset(route('contact'))}}" class="nav-item nav-link">Contact</a>
+                        <a wire:navigate  href="{{asset(route('home'))}}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
+                        <a wire:navigate href="{{asset(route('about'))}}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
+                        <a wire:navigate href="{{asset(route('service'))}}" class="nav-item nav-link {{ request()->routeIs('service') ? 'active' : '' }}">Service</a>
+                        <a wire:navigate href="{{asset(route('project'))}}" class="nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Project</a>
+                        <a wire:navigate href="{{asset(route('contact'))}}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
                     </div>
                 </div>
             </nav>

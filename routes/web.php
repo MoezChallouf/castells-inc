@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ProjectController;
@@ -27,7 +28,12 @@ Route::view('/project', 'pages/project')->name('project');
 Route::view('/appointment', 'appointment')->name('appointment');
 Route::view('/team', 'team')->name('team');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
+Route::view('/work-detail', 'pages/work-detail')->name('work-detail');
 Route::view('contact', 'pages/contact')->name('contact');
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');
+Route::get('/projects/{project}', [ProjectController::class, 'show'])->name('projects.show');
+Route::post('/projects/{project}/comments', [CommentController::class, 'store'])
+    ->name('comments.store');
+Route::get('/projects/search-by-tags', [ProjectController::class, 'searchByTags'])->name('projects.search-by-tags');
