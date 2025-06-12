@@ -17,6 +17,14 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ProjectResource extends Resource
 {
+
+     public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+    protected static ?string $navigationBadgeTooltip = 'Nombre de Projets';
+
+    protected static ?string $navigationGroup = 'Gestion des Projects';
     
     protected static ?string $model = Project::class;
 

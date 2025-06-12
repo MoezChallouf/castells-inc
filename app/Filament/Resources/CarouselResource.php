@@ -19,6 +19,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CarouselResource extends Resource
 {
+    protected static ?string $navigationGroup = 'Home Page Sliders';
+
     protected static ?string $model = Carousel::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-square-3-stack-3d';

@@ -18,6 +18,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class TagResource extends Resource
 {
+    protected static ?string $navigationGroup = 'Gestion des Projects';
+
     protected static ?string $model = Tag::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-tag';

@@ -17,6 +17,8 @@ class ProjectImageResource extends Resource
 {
     protected static ?string $model = ProjectImage::class;
 
+    protected static ?string $navigationGroup = 'Gestion des Projects';
+
     protected static ?string $navigationIcon = 'heroicon-o-photo';
 
     public static function form(Form $form): Form

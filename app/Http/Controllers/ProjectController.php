@@ -6,11 +6,29 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Artesaos\SEOTools\Facades\SEOTools as SEO;
 
 class ProjectController extends Controller
 {
   public function home()
 {
+    SEO::setTitle('Luxury Custom Home Builders in Montreal | Castells Inc');
+    SEO::setDescription('Premium custom home builders & renovation experts in Montreal. Crafting luxury living spaces with uncompromising quality since 2015.');
+    
+    SEO::metatags()->addKeyword([
+        'luxury home builders montreal','castells','castells-inc',
+        'premium renovations',
+        'custom dream home',
+        'high-end home transformations',
+        'architectural design montreal',
+        'west island luxury builders',
+        'laval home renovation experts'
+    ]);
+    
+    SEO::opengraph()->setUrl(url()->current());
+    SEO::twitter()->setSite('@Castells-Inc');
+    SEO::jsonLd()->addImage(asset('img/og-image.jpg'));
+
     $featuredProjects = Project::with('category')
         ->where('is_featured', true)
         ->take(9) // Show 6 featured projects on home

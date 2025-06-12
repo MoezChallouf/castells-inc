@@ -15,6 +15,13 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CategoryResource extends Resource
 {
+
+      public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+    protected static ?string $navigationGroup = 'Gestion des Projects';
+
     protected static ?string $model = Category::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-adjustments-horizontal';

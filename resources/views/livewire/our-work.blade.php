@@ -1,15 +1,15 @@
 <div>
    <div class="our-works">
   <div class="header-text text-center mb-5">
-    <h6 class="text-primary text-uppercase mb-3">Our Expertise</h6>
-    <h1 class="mb-4">Transformation Projects Showcase</h1>
+    <h6 class="text-primary text-uppercase mb-3">Notre Expertise</h6>
+    <h1 class="mb-4">Galerie de Projets de Transformation</h1>
   </div>
 
   @if($featuredCategories->isNotEmpty())
   <div class="row justify-content-center">
     <div class="col-12 text-center mb-4">
       <div class="btn-group filter-buttons">
-        <button class="btn btn-outline-primary active" data-filter="*">All</button>
+        <button class="btn btn-outline-primary active" data-filter="*">Tous</button>
         @foreach($featuredCategories as $category)
           <button class="btn btn-outline-primary" data-filter="{{ $category->id }}">
             {{ $category->name }}
@@ -28,14 +28,14 @@
 
         <div class="comparison-slider">
           <div class="comparison-before">
-            <img src="{{ Storage::url($project->before_image) }}" alt="Before {{ $project->title }}" loading="lazy">
+            <img src="{{ Storage::url($project->before_image) }}" alt="Avant {{ $project->title }}" loading="lazy">
           </div>
           <div class="comparison-after">
-            <img src="{{ Storage::url($project->after_image) }}" alt="After {{ $project->title }}" loading="lazy">
+            <img src="{{ Storage::url($project->after_image) }}" alt="Après {{ $project->title }}" loading="lazy">
           </div>
           <div class="comparison-handle"><div class="handle-arrow"></div><div class="handle-circle"></div></div>
-          <div class="comparison-label before">Before</div>
-          <div class="comparison-label after">After</div>
+          <div class="comparison-label before">Avant</div>
+          <div class="comparison-label after">Après</div>
         </div>
         <div class="project-info">
           <h3> 
@@ -49,12 +49,11 @@
       </div>
     @empty
       <div class="col-12 text-center">
-        <p class="text-muted">No featured projects available</p>
+        <p class="text-muted">Aucun projet vedette disponible</p>
       </div>
     @endforelse
   </div>
 </div>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {

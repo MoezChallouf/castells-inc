@@ -1,50 +1,49 @@
 @extends('layouts.app')
 
-@section('title', 'Work Detail')
+@section('title', 'Détail du Projet')
 
 @section('content')
 
-
-<!-- Page Header Start -->
+<!-- En-tête de Page Début -->
 <div class="container-fluid bg-secondary py-5">
     <div class="container py-5">
         <div class="row align-items-center py-4">
             <div class="col-md-6 text-center text-md-left" data-aos="fade-right">
-                <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Work Detail</h1>
+                <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Détail du Projet</h1>
             </div>
             <div class="col-md-6 text-center text-md-right" data-aos="fade-left" data-aos-delay="200">
                 <div class="d-inline-flex align-items-center">
-                    <a class="btn btn-outline-primary" href="">Home</a>
+                    <a class="btn btn-outline-primary" href="">Accueil</a>
                     <i class="fas fa-angle-double-right text-primary mx-2"></i>
-                    <a class="btn btn-outline-primary disabled" href="">Work Detail</a>
+                    <a class="btn btn-outline-primary disabled" href="">Détail du Projet</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Page Header End -->
+<!-- En-tête de Page Fin -->
 
-<!-- Detail Start -->
+<!-- Détail Début -->
 <div class="container py-5">
     <div class="row pt-5">
         <div class="col-lg-8">
             <div class="d-flex flex-column text-left mb-4" data-aos="fade-up">
-                <h6 class="text-primary font-weight-normal text-uppercase mb-3">Work Detail Page</h6>
+                <h6 class="text-primary font-weight-normal text-uppercase mb-3">Page de Détail</h6>
                 <h1 class="mb-4 section-title">{{ $project->title }}</h1>
             </div>
 
-            <!-- Before / After Section Start -->
+            <!-- Section Avant/Après Début -->
             <div class="container-fluid py-2">
                 <div class="container py-2">
                     <div class="row mx-1 portfolio-container">
-                        <!-- Before Image -->
+                        <!-- Image Avant -->
                         <div class="col-lg-6 col-md-6 col-sm-12 p-0 portfolio-item" data-aos="fade-right">
                             <div class="position-relative overflow-hidden">
                                 <div class="portfolio-img d-flex align-items-center justify-content-center">
-                                    <img class="img-fluid" src="{{ Storage::url($project->before_image) }}" alt="Before {{ $project->title }}">
+                                    <img class="img-fluid" src="{{ Storage::url($project->before_image) }}" alt="Avant {{ $project->title }}">
                                 </div>
                                 <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                                    <h5 class="text-white mb-2">Before</h5>
+                                    <h5 class="text-white mb-2">Avant</h5>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <a class="btn btn-outline-primary m-1" href="{{ Storage::url($project->before_image) }}" data-lightbox="portfolio">
                                             <i class="fa fa-eye"></i>
@@ -54,14 +53,14 @@
                             </div>
                         </div>
 
-                        <!-- After Image -->
+                        <!-- Image Après -->
                         <div class="col-lg-6 col-md-6 col-sm-12 p-0 portfolio-item" data-aos="fade-left" data-aos-delay="200">
                             <div class="position-relative overflow-hidden">
                                 <div class="portfolio-img d-flex align-items-center justify-content-center">
-                                    <img class="img-fluid" src="{{ Storage::url($project->after_image) }}" alt="After {{ $project->title }}">
+                                    <img class="img-fluid" src="{{ Storage::url($project->after_image) }}" alt="Après {{ $project->title }}">
                                 </div>
                                 <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
-                                    <h5 class="text-white mb-2">After</h5>
+                                    <h5 class="text-white mb-2">Après</h5>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <a class="btn btn-outline-primary m-1" href="{{ Storage::url($project->after_image) }}" data-lightbox="portfolio">
                                             <i class="fa fa-eye"></i>
@@ -70,17 +69,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- End .portfolio-container -->
+                    </div> <!-- Fin .portfolio-container -->
                     <p class="mt-2" data-aos="fade-up" data-aos-delay="300">{{ $project->description }}</p>
                 </div>
             </div>
-            <!-- Before / After Section End -->
+            <!-- Section Avant/Après Fin -->
 
-            <!-- Project Gallery Start -->
+            <!-- Galerie du Projet Début -->
             <div class="row mb-4">
                 <div class="col text-center" data-aos="fade-down">
-                    <h2 class="text-primary fw-bold">Project Gallery</h2>
-                    <p class="text-muted mb-0">Here are all the photos related to this project, showcasing the details and progress.</p>
+                    <h2 class="text-primary fw-bold">Galerie du Projet</h2>
+                    <p class="text-muted mb-0">Découvrez toutes les photos liées à ce projet, mettant en lumière les détails et l'évolution des travaux.</p>
                 </div>
             </div>
 
@@ -105,24 +104,24 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div> <!-- End .portfolio-container -->
+                    </div> <!-- Fin .portfolio-container -->
                 </div>
             </div>
-            <!-- Project Gallery End -->
+            <!-- Galerie du Projet Fin -->
             
             <div class="w-100 clearfix"></div>
             
-            <!-- Comments Section with Animation -->
+            <!-- Section Commentaires avec Animation -->
             <div data-aos="fade-up" data-aos-delay="200">
                 @livewire('comments-section', ['project' => $project])
             </div>
 
-        </div> <!-- End .col-lg-8 -->
+        </div> <!-- Fin .col-lg-8 -->
 
         <div class="col-lg-4 mt-5 mt-lg-0">
-            <!-- Categories with Animation -->
+            <!-- Catégories avec Animation -->
             <div class="mb-1" data-aos="fade-left" data-aos-delay="100">
-                <h3 class="mb-4 section-title">Categories</h3>
+                <h3 class="mb-4 section-title">Catégories</h3>
                 <ul class="list-group">
                     @foreach($categories as $category)
                        <a href="{{asset(route('project'))}}">
@@ -136,14 +135,14 @@
                 </ul>
             </div>
 
-            <!-- Featured Image with Animation -->
+            <!-- Image Principale avec Animation -->
             <div class="mb-5" data-aos="zoom-in" data-aos-delay="200">
                 <img src="{{ $project->before_image_url }}" alt="" class="img-fluid">
             </div>
 
-            <!-- Recent Projects with Animation -->
+            <!-- Projets Récents avec Animation -->
             <div class="mb-5" data-aos="fade-left" data-aos-delay="300">
-                <h3 class="mb-4 section-title">Recent Projects</h3>
+                <h3 class="mb-4 section-title">Projets Récents</h3>
                 @foreach($recentProjects as $index => $recent)
                     <div class="d-flex align-items-center border-bottom mb-3 pb-3"
                          data-aos="fade-left" data-aos-delay="{{ 300 + ($index * 100) }}">
@@ -154,7 +153,7 @@
                             </a>
                             <div class="d-flex">
                                 <small class="mr-3">
-                                    <i class="fa fa-folder text-primary"></i> {{ $recent->category->name ?? 'Uncategorized' }}
+                                    <i class="fa fa-folder text-primary"></i> {{ $recent->category->name ?? 'Non classé' }}
                                 </small>
                                 <small class="mr-3">
                                     <i class="fa fa-comments text-primary"></i> {{ $recent->comments_count ?? 0 }}
@@ -165,9 +164,9 @@
                 @endforeach
             </div>
 
-            <!-- Tag Cloud with Animation -->
+            <!-- Nuage de Tags avec Animation -->
             <div class="mb-5" data-aos="fade-left" data-aos-delay="400">
-                <h3 class="mb-4 section-title">Tag Cloud</h3>
+                <h3 class="mb-4 section-title">Mots-clés</h3>
                 <div class="d-flex flex-wrap m-n1">
                     @foreach($project->tags as $index => $tag)
                         <a href="{{asset(route('project'))}}" 
@@ -179,13 +178,13 @@
                     @endforeach
                 </div>
             </div>
-        </div> <!-- End .col-lg-4 -->
+        </div> <!-- Fin .col-lg-4 -->
 
-    </div> <!-- End .row -->
-</div> <!-- End .container -->
-<!-- Detail End -->
+    </div> <!-- Fin .row -->
+</div> <!-- Fin .container -->
+<!-- Détail Fin -->
 
-<!-- Initialize AOS -->
+<!-- Initialisation AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -196,7 +195,7 @@
             mirror: false
         });
         
-        // Add scroll animation for gallery images
+        // Animation au scroll pour les images de la galerie
         const galleryItems = document.querySelectorAll('.portfolio-item');
         
         function checkGalleryItems() {
@@ -209,10 +208,10 @@
             });
         }
         
-        // Initial check
+        // Vérification initiale
         checkGalleryItems();
         
-        // Listen for scroll events
+        // Écouteur d'événement scroll
         window.addEventListener('scroll', checkGalleryItems);
     });
 </script>

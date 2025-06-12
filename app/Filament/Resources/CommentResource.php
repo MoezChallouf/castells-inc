@@ -17,7 +17,12 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CommentResource extends Resource
 {
+      public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
     protected static ?string $model = Comment::class;
+     protected static ?string $navigationGroup = 'Gestion des Contacts';
 
     protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-bottom-center-text';
 
@@ -36,14 +41,14 @@ class CommentResource extends Resource
                 TextColumn::make('project.title')->label('Project Name'),
                 TextColumn::make('name')->label('Visitor Name'),
                 TextColumn::make('email'),
-                TextColumn::make('message'),
+                TextColumn::make('message')->wrap(),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make()->label(''),
-                Tables\Actions\EditAction::make()->label(''),
+                // Tables\Actions\ViewAction::make()->label(''),
+                // Tables\Actions\EditAction::make()->label(''),
                 Tables\Actions\DeleteAction::make()->label(''),
             ])
             ->bulkActions([

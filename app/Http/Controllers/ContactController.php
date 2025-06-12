@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactRequest;
+use App\Models\Recrutement;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -34,4 +35,6 @@ class ContactController extends Controller
 
     return response()->json(['success' => true, 'message' => 'Message sent successfully.']);
 }
+
+
 }
