@@ -52,10 +52,10 @@
                         <a wire:navigate href="{{asset(route('project'))}}" class="nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Projets</a>
                         <a  href="{{asset(route('contact'))}}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }} mr-2">Contact</a>
                        <a href="{{ asset(route('recrutement')) }}" 
-   class="btn btn-primary d-flex align-items-center justify-content-center text-white px-4 py-2 gap-2"
+   class="btn btn-primary d-flex align-items-center justify-content-center text-white px-4 py-2 gap-2" style="font-size: 15px"
    
    >
-   <i class="fas fa-briefcase mr-2"></i> Recrutement
+   <i class="fas fa-briefcase mr-2"></i> Déposer votre CV
 </a>
 
 

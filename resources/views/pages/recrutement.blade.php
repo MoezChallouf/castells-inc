@@ -25,13 +25,13 @@ SEO::jsonLd()->addImage(asset('img/castells-1.png'));
     <div class="container py-5">
         <div class="row align-items-center py-4">
             <div class="col-md-6 text-center text-md-left">
-                <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Recrutement</h1>
+                <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Déposer votre CV</h1>
             </div>
             <div class="col-md-6 text-center text-md-right">
                 <div class="d-inline-flex align-items-center">
                     <a class="btn btn-outline-primary" href="{{ route('home') }}">Accueil</a>
                     <i class="fas fa-angle-double-right text-primary mx-2"></i>
-                    <a class="btn btn-outline-primary disabled">Recrutement</a>
+                    <a class="btn btn-outline-primary disabled">Déposer votre CV</a>
                 </div>
             </div>
         </div>
