@@ -14,7 +14,7 @@
                 <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.instagram.com/castells_inc/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
+        <div class="col-lg-3 col-md-6 mb-5 px-4">
             <h4 class="text-primary mb-4">Liens Rapides</h4>
             <div class="d-flex flex-column justify-content-start">
                 <a class="text-white mb-2" href="{{asset(route('home'))}}"><i class="fa fa-angle-right mr-2"></i>Accueil</a>
@@ -22,14 +22,14 @@
                 <a class="text-white mb-2" href="{{asset(route('service'))}}"><i class="fa fa-angle-right mr-2"></i>Nos Services</a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
+        <div class="col-lg-3 col-md-6 mb-5 px-4">
             <h4 class="text-primary mb-4">...</h4>
             <div class="d-flex flex-column justify-content-start">
                 <a class="text-white mb-2" href="{{asset(route('project'))}}"><i class="fa fa-angle-right mr-2"></i>Nos Projets</a>
                 <a class="text-white" href="{{asset(route('contact'))}}"><i class="fa fa-angle-right mr-2"></i>Contact</a>
             </div>
         </div>
-         <div class="col-lg-3 col-md-6 mb-5">
+         <div class="col-lg-3 col-md-6 mb-5 px-4">
            @livewire('newsletter-subscription')
         </div>
     </div>
