@@ -2,7 +2,7 @@
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-md-5">
     <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
+        <div class="col-lg-3 col-md-6 mb-5 px-4">
             <h4 class="text-primary mb-4">Nous Contacter</h4>
             <p><i class="fa fa-map-marker-alt mr-2"></i>Montréal, QC, Canada</p>
             <p><i class="fa fa-phone-alt mr-2"></i>438-408-1100</p>

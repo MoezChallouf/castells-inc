@@ -46,19 +46,14 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a wire:navigate  href="{{asset(route('home'))}}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a>
+                        <a  href="{{asset(route('home'))}}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a>
                         <a  href="{{asset(route('about'))}}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">À Propos</a>
-                        <a wire:navigate href="{{asset(route('service'))}}" class="nav-item nav-link {{ request()->routeIs('service') ? 'active' : '' }}">Services</a>
-                        <a wire:navigate href="{{asset(route('project'))}}" class="nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Projets</a>
+                        <a  href="{{asset(route('service'))}}" class="nav-item nav-link {{ request()->routeIs('service') ? 'active' : '' }}">Services</a>
+                        <a  href="{{asset(route('project'))}}" class="nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Projets</a>
                         <a  href="{{asset(route('contact'))}}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }} mr-2">Contact</a>
-                       <a href="{{ asset(route('recrutement')) }}" 
-   class="btn btn-primary d-flex align-items-center justify-content-center text-white px-4 py-2 gap-2" style="font-size: 15px"
-   
-   >
-   <i class="fas fa-briefcase mr-2"></i> Déposer votre CV
-</a>
-
-
+                        <a href="{{ asset(route('recrutement')) }}" class="btn btn-primary d-flex align-items-center justify-content-center text-white px-4 py-2 gap-2" style="font-size: 15px">
+                            <i class="fas fa-briefcase mr-2"></i> Déposer votre CV
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -75,7 +70,7 @@
                         <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
                             <h5>Notre Bureau</h5>
-                            <p class="m-0">Montréal, QC, Canada</p>
+                            <p class="m-0 text-dark">Montréal, QC, Canada</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +79,7 @@
                         <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
                             <h5>Envoyez-nous un Email</h5>
-                            <p class="m-0">contact@castells-inc.ca</p>
+                            <p class="m-0"><a href="mailto:contact@castells-inc.ca" class="text-dark">contact@castells-inc.ca</a></p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +88,7 @@
                         <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
                         <div class="d-flex flex-column">
                             <h5>Appelez-nous</h5>
-                            <p class="m-0">438-408-1100</p>
+                            <p class="m-0"><a href="tel:4384081100" class="text-dark">438-408-1100</a></p>
                         </div>
                     </div>
                 </div>

@@ -26,8 +26,12 @@ SEO::jsonLd()->addImage(asset('img/castells-1.png'));
             <div class="row align-items-center py-4">
                 <div class="col-md-6 text-center text-md-left">
                     <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Contactez-nous</h1>
+                     <p class="lead mt-3" style="color: #cba567;">
+                         Nos experts sont disponibles pour vous accompagner tout au long de votre projet.
+                    </p>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
+                    
                     <div class="d-inline-flex align-items-center">
                         <a class="btn btn-outline-primary" wire:navigate href="{{asset(route('home'))}}">Accueil</a>
                         <i class="fas fa-angle-double-right text-primary mx-2"></i>
@@ -79,6 +83,14 @@ SEO::jsonLd()->addImage(asset('img/castells-1.png'));
             <!-- Form Column -->
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="bg-light p-5 rounded shadow">
+                    <div id="formSuccess" class="alert alert-success mt-3 d-none"></div>
+                    <h6 class="text-primary text-uppercase font-weight-bold mb-2">Contactez-Nous</h6>
+                    <h2 class="mb-4 font-weight-bold">Discutons de Votre Projet de Rêve</h2>
+
+                    <p class="mb-4">
+                        Que vous envisagiez une rénovation ou une nouvelle construction, notre équipe est là pour vous écouter. Partagez votre vision et laissez-nous vous accompagner vers sa réalisation.
+                    </p>
+
                     <form id="contactForm" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
