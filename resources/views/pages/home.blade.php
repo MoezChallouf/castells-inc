@@ -219,6 +219,48 @@
         </div>
     </div>
 
+    <!-- Section Régions Desservies avec Style Amélioré -->
+<div class="container-fluid py-5 px-3 bg-white">
+    <div class="container py-2">
+        <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="700">
+            <h6 class="text-primary font-weight-normal text-uppercase mb-3">Zones d’intervention</h6>
+            <h1 class="section-title">Régions Que Nous Desservons</h1>
+            <p class="mt-3">Nous sommes fiers d'offrir nos services de rénovation dans les principales régions autour de Montréal, en assurant qualité et proximité.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="bg-light text-center p-4 shadow-sm h-100 rounded">
+                    <i class="fas fa-city fa-2x text-primary mb-3"></i>
+                    <h5 class="mb-2">Montréal</h5>
+                    <p class="mb-0">Service de rénovation résidentielle dans toute la région de Montréal.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="bg-light text-center p-4 shadow-sm h-100 rounded">
+                    <i class="fas fa-home fa-2x text-primary mb-3"></i>
+                    <h5 class="mb-2">Laval</h5>
+                    <p class="mb-0">Expertise locale pour vos projets de rénovation à Laval.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="bg-light text-center p-4 shadow-sm h-100 rounded">
+                    <i class="fas fa-mountain fa-2x text-primary mb-3"></i>
+                    <h5 class="mb-2">Rive-Nord</h5>
+                    <p class="mb-0">Services disponibles dans la région de la Rive-Nord de Montréal.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="bg-light text-center p-4 shadow-sm h-100 rounded">
+                    <i class="fas fa-tree fa-2x text-primary mb-3"></i>
+                    <h5 class="mb-2">Rive-Sud</h5>
+                    <p class="mb-0">Rénovation résidentielle dans la Rive-Sud de Montréal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <!-- Section Nos Réalisations avec Animation -->
     <div data-aos="zoom-in" data-aos-duration="1000" class="px-3">
         @livewire('our-work', ['onlyFeatured' => true])
