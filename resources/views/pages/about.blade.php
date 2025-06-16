@@ -84,7 +84,7 @@
                     <li data-aos="fade-left" data-aos-delay="400"><h5><i class="far fa-check-square text-primary mr-3"></i>Matériaux et Finitions Premium</h5></li>
                     <li data-aos="fade-left" data-aos-delay="500"><h5><i class="far fa-check-square text-primary mr-3"></i>Gestion Complète de Projet</h5></li>
                 </ul>
-                <a href="{{ url('/projects') }}" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="600">Découvrez Nos Réalisations</a>
+                <a href="{{asset(route('project'))}}" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="600">Découvrez Nos Réalisations</a>
             </div>
             <div class="col-lg-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">

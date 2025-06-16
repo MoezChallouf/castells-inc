@@ -31,7 +31,7 @@
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Services Signature</h6>
                     <h1 class="mb-4 section-title">Transformer les Espaces avec Élégance & Précision</h1>
                     <p>Chez Castells, nous créons des intérieurs qui allient sophistication intemporelle et vision contemporaine. Du concept à la réalisation, notre philosophie de design repose sur la personnalisation, la qualité et une expérience client immersive. Que ce soit pour votre résidence ou un espace commercial, chaque détail est traité avec soin et créativité.</p>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">Découvrez Nos Réalisations</a>
+                    <a href="{{asset(route('project'))}}" class="btn btn-primary mt-3 py-2 px-4">Découvrez Nos Réalisations</a>
                 </div>
                 <div class="col-lg-6 p-0 pt-5 pt-lg-0">
                     <div class="owl-carousel service-carousel position-relative">
@@ -70,7 +70,7 @@
                         <li><h5><i class="far fa-check-square text-primary mr-3"></i>Intérieurs Haut de Gamme Personnalisés</h5></li>
                         <li><h5><i class="far fa-check-square text-primary mr-3"></i>Satisfaction Client Inégalée</h5></li>
                     </ul>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">Soyez Inspiré</a>
+                    <a href="{{asset(route('contact'))}}" class="btn btn-primary mt-3 py-2 px-4">Contactez nous</a>
                 </div>
                 <div class="col-lg-5">
                     <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">

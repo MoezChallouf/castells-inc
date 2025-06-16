@@ -167,7 +167,7 @@
                     <h6 class="text-primary font-weight-normal text-uppercase mb-3">Nos Services</h6>
                     <h1 class="mb-4 section-title">Solutions de Construction et Rénovation de Haute Qualité</h1>
                     <p>Nous proposons des solutions expertes en construction, rénovation et aménagement intérieur adaptées à vos besoins. Du concept à la réalisation, notre équipe garantit précision, qualité et satisfaction sur chaque projet.</p>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="300">Découvrir Plus</a>
+                    <a href="{{asset(route(name: 'service'))}}" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="300">Découvrir Plus</a>
                 </div>
                 <div class="col-lg-6 p-0 pt-5 pt-lg-0">
                     <div class="owl-carousel service-carousel position-relative">
@@ -205,7 +205,7 @@
                         <li data-aos="fade-left" data-aos-delay="300"><h5><i class="far fa-check-square text-primary mr-3"></i>Construction de Maisons de Luxe sur Mesure</h5></li>
                         <li data-aos="fade-left" data-aos-delay="400"><h5><i class="far fa-check-square text-primary mr-3"></i>Services de Rénovation Centrés sur le Client</h5></li>
                     </ul>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="500">Découvrir Plus</a>
+                    <a href="{{asset(route('about'))}}" class="btn btn-primary mt-3 py-2 px-4" data-aos="fade-up" data-aos-delay="500">Découvrir Plus</a>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                      <div class="d-flex flex-column align-items-center justify-content-center bg-primary  h-100 py-3 px-3">

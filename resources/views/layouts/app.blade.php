@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     {!! SEOTools::generate() !!}
+
     <meta charset="utf-8">
     <title>@yield('title', 'Castells INC.')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
