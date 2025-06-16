@@ -107,6 +107,30 @@ SEO::jsonLd()->addImage(asset('img/castells-1.png'));
     </div>
 </div>
 <!-- Contact Fin -->
+<!-- Section Certifications -->
+<div class="container-fluid py-5  text-white">
+    <div class="container text-center">
+        <h2 class="mb-3" data-aos="fade-down" data-aos-delay="100">Des certifications qui inspirent confiance</h2>
+        <p class="mb-5 text-secondary" data-aos="fade-up" data-aos-delay="200">
+            Castells Inc. est fièrement reconnu par les principales instances du secteur de la construction au Québec.
+        </p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 col-sm-3 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <img src="{{ asset('img/logos/rbq.jpg') }}" class="img-fluid grayscale-hover" alt="RBQ">
+            </div>
+            <div class="col-6 col-sm-3 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                <img src="{{ asset('img/logos/ccq.jpg') }}" class="img-fluid grayscale-hover" alt="CCQ">
+            </div>
+            <div class="col-6 col-sm-3 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                <img src="{{ asset('img/logos/acq.png') }}" class="img-fluid grayscale-hover" alt="ACQ">
+            </div>
+            <div class="col-6 col-sm-3 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                <img src="{{ asset('img/logos/cnesst.jpg') }}" class="img-fluid grayscale-hover" alt="CNESST">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
       <!-- En-tête de Page avec Fond de Carte Google Début -->
